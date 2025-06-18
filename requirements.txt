@@ -1,0 +1,21 @@
+aiogram
+fastapi
+uvicorn
+sqlalchemy
+asyncpg         # для PostgreSQL (можно заменить на sqlite, если нужно)
+python-dotenv
+pybit
+openai
+cryptography    # для шифрования ключей
+httpx
+fastapi
+uvicorn
+Flask
+psycopg2-binary
+Flask
+psycopg2-binary
+gunicorn==20.1.0
+
+
+
+
