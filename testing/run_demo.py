@@ -1,5 +1,3 @@
-# run_demo.py
-
 import argparse
 from reasoning_engine import answer_query
 
@@ -12,3 +10,9 @@ args = parser.parse_args()
 reply = answer_query(args.question, index_name=args.index, top_k=args.top)
 print("Ответ модели:")
 print(reply)
+
+# Сохраняем ответ в файл (добавляет каждый новый ответ в конец)
+with open("output_gpt.txt", "a", encoding="utf-8") as f:
+    f.write(f"Вопрос: {args.question}\n")
+    f.write(f"Ответ: {reply}\n")
+    f.write("="*50 + "\n")
